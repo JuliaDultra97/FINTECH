@@ -1,0 +1,46 @@
+body {
+  animation: changeColor 5s infinite alternate; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #4b4646;
+}
+
+#login-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+#login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+#login-container button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@keyframes changeColor {
+  0% {
+      background-color: #3a7297; /* Cor inicial (azul) */
+  }
+  50% {
+      background-color: #3ce7de; /* Cor intermediária (vermelho) */
+  }
+  100% {
+      background-color: #18e9aa; /* Cor final (azul novamente) */
+  }
+}
